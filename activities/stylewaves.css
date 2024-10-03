@@ -1,0 +1,10 @@
+body {
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif
+    color: #2233BB;
+}
+
+#waves {
+    height: 500px;
+    width: 600px;
+}
