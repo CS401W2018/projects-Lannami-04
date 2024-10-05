@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: url('blue.jpeg') #2222DD;
+}
+
+.list {
+    list-style-image: url('bullet.png.jpg');
+}
+
+header{
+    background: url('flower1.png') right no-repeat;
+}
+
+nav a {
+    color:grey;
+}
+
+.current {
+    color:red;
+}
