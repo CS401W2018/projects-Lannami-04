@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(231, 209, 138);
+    border: thin solid black;
+}
+
+header {
+    background-color: rgb(147, 184, 191);
+    width: 70%;
+    margin: 30px auto;
+    padding: 50px 30px 100px 3px;
+}
+
+figure {
+    border: thin solid #000;
+    width: 200px;
+}
+
+img {
+    width: 200px;
+}
