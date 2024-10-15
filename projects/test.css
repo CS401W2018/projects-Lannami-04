@@ -1,0 +1,98 @@
+body {
+    font-family: cursive;
+    background-color: #212020;
+    margin: 5;
+    padding: 0%;
+    line-height: 1.5;
+}
+
+main {
+    background-color: rgb(252, 214, 60);
+}
+
+header {
+    background-color: rgb(252, 214, 60);
+    background-image: url('stars.jpg');
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    height: 100px;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+nav {
+    background-color: rgb(252, 214, 60);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 5px 5px;
+    background-color: #3a1295;
+    border-bottom: thin solid #FFF;
+    color: rgb(213, 226, 227);
+    margin-left: 20px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #605678;
+    color: aliceblue;
+}
+
+#wrapper {
+    text-align: center;
+    background-color: rgb(252, 214, 60);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    float: right;
+    margin: 10px;
+    width: 70%;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+.clear {
+   clear: both;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(210, 48, 16);
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
