@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: azure;
+}
+
+header {
+    background-color: pink;
+}
+
+header h1 {
+    margin: 0px;
+}
+
+nav {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 10px 5px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+}
+
+.byodo {
+    width: 250px;
+    border: thin solid #000;
+    box-shadow: 3px 3px 3px rgba(50, 50, 50, 0.5);
+    margin: 10px;
+}
+
+.byodo img {
+    width: 100%;
+}
