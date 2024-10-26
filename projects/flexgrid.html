@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexGrid</title>
-    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="flex.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
 </head>
 <body>
     <header>
@@ -27,35 +28,42 @@
             <div class="profile-cards">
                 <div class="card">
                     <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
+                    <h3>Spider Lily 1 Collection</h3>
+                    <p>Elegant arrangements for any occasion.</p>
+                </div>
+                <div class="card main-card">
+                    <img src="lily.jpg" alt="Flower Image">
+                    <h3>Spider Lily 2 center Collection</h3>
                     <p>Elegant arrangements for any occasion.</p>
                 </div>
                 <div class="card">
                     <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
+                    <h3>Spider Lily 3 Collection</h3>
                     <p>Elegant arrangements for any occasion.</p>
                 </div>
                 <div class="card">
                     <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
+                    <h3>Spider Lily 4 Collection</h3>
                     <p>Elegant arrangements for any occasion.</p>
                 </div>
                 <div class="card">
                     <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
+                    <h3>Spider Lily 5 Collection</h3>
                     <p>Elegant arrangements for any occasion.</p>
                 </div>
                 <div class="card">
                     <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
-                    <p>Elegant arrangements for any occasion.</p>
-                </div>
-                <div class="card">
-                    <img src="lily.jpg" alt="Flower Image">
-                    <h3>Spider Lily Collection</h3>
+                    <h3>Spider Lily 6 Collection</h3>
                     <p>Elegant arrangements for any occasion.</p>
                 </div>
             </div>
+            <br>
+            <p><b>1. Why do we need a viewport meta tag?</b></p>
+            <p> This tag is essential for a responsive web design. It controls the layout of our webpage by controlling its width and scale of the viewport. It allows users to still view a webpage easily on smaller screens like phones. Without it, websites may be displayed as a zoomed-out version of the desktop layout. Adding this tag ensures that our page scales correctly on different sizes of devices and allows CSS media queries to adapt to various screens.</p>
+            <p><b>2. When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority?</b></p>
+            <p> I learned in class that the rule that comes last in the CSS stylesheet will overwrite the first one. The browser will use the one that appears later in the CSS because it is the last command that we used. I also learned that when we do not want to deal with this, we can just add a !important rule, which makes whatever we put with it the priority.</p>
+            <p><b>3. How do you change the CSS for a webpage displayed on a phone?</b></p>
+            <p>We can change the CSS for mobile devices by using media query. For example, we did "@media (max-width: 600px) in this activity and we put all the changes we want to have and modified it in this media query.</p>
         </main>
     </div>
     <footer>
