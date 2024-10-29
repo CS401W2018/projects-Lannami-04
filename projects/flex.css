@@ -97,3 +97,39 @@ footer p {
     font-size: 0.9em;
     color: #000000;
 }
+
+@media only screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        padding-left: 15px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+        margin: auto 10px;
+    }
+
+    .profile-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    aside {
+        width: 50%;
+        margin: 10px;
+    }
+
+    .main-card {
+        order: -1;
+    }
+
+    
+
+}

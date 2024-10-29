@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #62a4ab;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: #d8bcb5;
+    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #62a4ab;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    margin: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+aside {
+    flex: 0 0 20%;
+}
+
+.sidebar {
+    background-color: #f9bf1e;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+    width: 100%;
+}
+
+.sidebar ul li {
+    padding: 5px; 
+    overflow: hidden;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sidebar figure img {
+    width: 100%;
+    height: auto;
+    max-width: 150%;
+}
+
+article {
+    background-color: #88e23b;
+    padding: 1rem;
+    flex: 1 1 30%;
+    border-radius: 5px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #ebe480;
+    color: #043c6e;
+    padding: 20px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 2;
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .content {
+        order:1;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    article {
+        flex: 1 1 auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@media print {
+    nav, footer {
+        display: none !important;
+    }
+
+    body {
+        color: black; 
+        background: white; 
+    }
+
+    main {
+        margin: 0; 
+        padding: 0; 
+    }
+
+    aside {
+        display: block; 
+        width: auto; 
+    }
+
+    .content {
+        display: block; 
+    }
+
+    article {
+        margin: 0; 
+    }
+}
