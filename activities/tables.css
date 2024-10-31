@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.schedule {
+    margin: 5px auto;
+    border: thin solid black;
+    border-spacing: 10px;
+}
+
+.schedule td, .schedule th{
+    border: thin solid black;
+    padding: 5px;
+}
