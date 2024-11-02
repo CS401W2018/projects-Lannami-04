@@ -1,14 +1,26 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .schedule {
     margin: 5px auto;
     border: thin solid black;
-    border-spacing: 10px;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    caption-side: bottom;
 }
 
 .schedule td, .schedule th{
     border: thin solid black;
-    padding: 5px;
+    padding: 10px;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: aqua;
+    color: rgb(62, 60, 58);
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: antiquewhite;
 }
