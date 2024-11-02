@@ -18,7 +18,7 @@ body {
 
 .schedule thead, .schedule tfoot {
     background-color: aqua;
-    color: rgb(62, 60, 58);
+    color: rgb(25, 24, 24);
 }
 
 .schedule tbody tr:nth-child(even) {
