@@ -12,35 +12,56 @@
     </header>
     <main>
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first" value="Joe" required="required"><br>
-            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
-            Password: <input type="password" name="pass"><br>
-            <input type="checkbox" name="remember" checked> Remember Me<br>
-            Class:
-            <input type="radio" name="class" value="freshman" required>Freshman<br>
-            <input type="radio"  name="class" value="Sophomore">Sophomore<br>
-            <input type="radio"  name="class" value="Junior">Junior<br>
-            <input type="radio"  name="class" value="Senior">Senior<br>
-            Comments: <textarea name="comments"></textarea>
-            State: <select name="state">
-                <option value="HI" selected>Hawaii</option>
-                <option value="UT">Utah</option>
-                <option value="LA">Los Angeles</option>
-                <option value="LV">Las Vegas</option>
-            </select>
-            <input type="submit">
-        </form>
-        <form>
-            <label for="gsearch">Search Google:</label>
-            <input type="search" id="gsearch" name="gsearch">
+            <fieldset>
+                <legend> Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="first" value="Joe" required></input>
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="last" placeholder="Last Name" required></input>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remember Me
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="state">State</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    Class:
+                    <label><input type="radio" name="class" value="freshman">Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore">Sophomore</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit">                
+                </div>
+            </fieldset>
         </form>
     </main>
-    <p>1. The form tag has an "action" attribute. What does it do?</p>
-    <p>The action attribute tells the browser where to send the form data when it is submitted. It could send it to a server script or to another page that will handle the data and perform tasks like saving information to a database.</p>
-    <p>2. The form tag has a "method" attribute. What does it do?</p>
-    <p>The method attribute in the form tag defines how the form data will be sent to the server. The values we used in class were GET and POST.</p>
-    <p>3. What is the difference between a "POST" and a "GET"?</p>
-    <p>GET appends data to the URL, making it visible in the browser's address bar. It is best used for requests that do not change data on the server. POST, on the other hand, sends data inside the request body which is hidden from the URL. It supports larger data and our professor said we should use this more because it is better in handling login forms or sending personal information as it keeps the data more secure.</p>
+    <p>1. What are different ways to style your form?</p>
+    <p>To style my form, I’d use different CSS properties to make it look more organized and visually appealing. I can change things like the background-color, border, and font-size to make the form easier to read. Adding padding and margins is also helpful because it spaces out the elements, so they don’t look all cramped together. One important thing our professor mentioned was to make the input boxes aligned to one another. This helps to make the form more coherent and makes it appear more professional, hence, trustworthy. I’d also try adjusting the font and color to make it more attractive and maybe even add rounded borders with border-radius or a shadow effect to give it a 3D look. Finally, our professor said it is also important that my form can also be user-friendly for mobile users. This makes it more responsive and I can do that by using CSS grid or flex.
+    </p>
+    <p>2. Why does the professor like to use flex?</p>
+    <p>The professor likes to use flex because it’s a flexible and efficient way to arrange elements on a page, especially for layouts that need to adapt to different screen sizes. It is more adaptable in a way that it can automatically adjust the size of items based on available space, preventing overflow issues that might happen with Grid. With Flexbox, items can wrap, shrink, or grow within a container to fit the screen size, so we don’t have to worry as much about things spilling out of the layout.</p>
     <footer>
         <p>&copy; 2024 Lanna Eleazar</p>
     </footer>
