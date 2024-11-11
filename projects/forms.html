@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Medical Information Form</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input id="fname" type="text" name="first" placeholder="First Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input id="lname" type="text" name="last" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth:</label>
+                    <input id="dob" type="date" name="dob" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Contact Number:</label>
+                    <input id="phone" type="tel" name="phone">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" required>Male</label>
+                    <label><input type="radio" name="gender" value="female" required>Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="history">Medical History:</label>
+                    <textarea id="history" name="history" rows="4" cols="50" placeholder="Please describe any past medical conditions..."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="insurance">Insurance Provider:</label>
+                    <select id="insurance" name="insurance">
+                        <option value="none">None</option>
+                        <option value="HMSA">Hawaii Medical Service Association</option>
+                        <option value="SSI">SilverScript</option>
+                        <option value="KP">Kaiser Permanente</option>
+                        <option value="Oth">Others</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="agree" required checked>I agree to the terms and conditions
+                    </label>
+                </div>
+                <div class="form-row">
+                    <input type="submit">                
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>All information provided will remain confidential.</p>
+    </footer>
+</body>
+</html>
