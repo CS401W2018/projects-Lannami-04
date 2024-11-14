@@ -11,7 +11,7 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend> Sign Up</legend>
                 <div class="form-row">
@@ -21,6 +21,10 @@
                 <div class="form-row">
                     <label for="lname">Last Name:</label>
                     <input id="lname" type="text" name="last" placeholder="Last Name" required></input>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input id="age" type="number" name="age" required>
                 </div>
                 <div class="form-row">
                     <label for="pass">Password:</label>
@@ -57,13 +61,43 @@
             </fieldset>
         </form>
     </main>
-    <p>1. What are different ways to style your form?</p>
-    <p>To style my form, I’d use different CSS properties to make it look more organized and visually appealing. I can change things like the background-color, border, and font-size to make the form easier to read. Adding padding and margins is also helpful because it spaces out the elements, so they don’t look all cramped together. One important thing our professor mentioned was to make the input boxes aligned to one another. This helps to make the form more coherent and makes it appear more professional, hence, trustworthy. I’d also try adjusting the font and color to make it more attractive and maybe even add rounded borders with border-radius or a shadow effect to give it a 3D look. Finally, our professor said it is also important that my form can also be user-friendly for mobile users. This makes it more responsive and I can do that by using CSS grid or flex.
+    <p>1. What is JavaScript?</p>
+    <p>JavaScript is a programming language that adds interactivity and dynamic behavior to web pages, allowing users to perform actions like dragging, dropping, and updating content without reloading. It interacts with the Document Object Model (DOM) to manipulate elements directly on the page. This makes web pages more engaging and responsive to user input.
     </p>
-    <p>2. Why does the professor like to use flex?</p>
-    <p>The professor likes to use flex because it’s a flexible and efficient way to arrange elements on a page, especially for layouts that need to adapt to different screen sizes. It is more adaptable in a way that it can automatically adjust the size of items based on available space, preventing overflow issues that might happen with Grid. With Flexbox, items can wrap, shrink, or grow within a container to fit the screen size, so we don’t have to worry as much about things spilling out of the layout.</p>
+    <p>1.1 How did JavaScript get its name?</p>
+    <p>JavaScript got its name as part of a marketing strategy by Sun Microsystems to leverage the popularity of the Java programming language. Although JavaScript and Java are different, the name was chosen to attract more developers to web technologies. This branding helped boost JavaScript’s popularity on the web.</p>
+    <p>2. What are two ways you can run JavaScript?</p>
+    <p>JavaScript can be run in a web browser, where it interacts with the DOM to create interactive page elements. Another way to run JavaScript is through Node.js, which allows developers to execute JavaScript on a server, outside of a browser. This expands JavaScript's use beyond web development to server-side tasks.</p>
+    <p>3. What was the most popular front-end JavaScript library?</p>
+    <p>jQuery was once the most popular front-end library, simplifying tasks like HTML manipulation and event handling with cross-browser compatibility. It reduced the amount of code needed for common JavaScript tasks, making web development faster and easier. As a result, it became widely adopted by developers in its time.</p>
+    <p>4. What is the most popular front-end JavaScript library today?</p>
+    <p>Today, React.js is the most popular front-end library, known for its component-based structure and virtual DOM that improve performance. Developed by Facebook, React allows developers to build reusable UI components for complex applications. React Native extends React’s principles to mobile app development, further increasing its popularity.</p>
     <footer>
         <p>&copy; 2024 Lanna Eleazar</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const first = document.getElementById('fname').value;
+            const last = document.getElementById('lname').value;
+            const age = document.getElementById('age').value;
+            const pass = document.getElementById('pass').value;
+            if (!first || !last) {
+                alert("You need a first and last name.");
+                return;
+            }
+            if (!age || age < 18) {
+                alert("You must be 18");
+                return;
+            }
+            const formData = {
+                fname: first,
+                lname: last,
+                age: age
+            }
+            console.log(formData)
+            alert("Form Submitted");
+        })
+    </script>
 </body>
 </html>

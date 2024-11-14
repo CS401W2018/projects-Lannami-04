@@ -55,4 +55,9 @@ input:not([type="submit"]):focus {
     .form-row label, .spacer {
         text-align: left;
     }
+
+    fieldset {
+        max-width: 100px;
+        padding: 15px;
+    }
 }
