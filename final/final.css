@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px; 
+    background-color: white; 
+    padding: 20px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+nav a {
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: #ccc;  
+    text-transform: uppercase;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a.current {
+    color: black;
+    font-weight: 800;
+}
+
+.table-container {
+    overflow-x: auto; 
+    margin: 0 auto; 
+}
+
+.styled-table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 20px 0; 
+    font-size: 16px; 
+    text-align: left;
+}
+
+.styled-table caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.styled-table thead tr {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
