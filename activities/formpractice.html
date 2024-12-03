@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Apply Here!</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="check.row">
+                    <div class="spacer">
+                        <label for="checkbox">Remember Me:</label>
+                        <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">'
+                        <option value="hawaii">Hawaii</option>
+                        <option value="LA">Los Angeles</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <p>Class:</p>
+                    <label><input type="radio" name="class" value="freshman">Freshman</label>
+                    <label><input type="radio" name="class" value="sophomore">Sophomore</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

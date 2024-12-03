@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finals.css">
+    <title>Personalized Acne Solution</title>
+</head>
+<body>
+    <header>
+        <h1>Flawlessly You</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lifestyle.html">Lifestyle</a>
+        <a href="diet.html">Diet</a>
+        <a href="products.html">Products</a>
+        <a href="donts.html">Don'ts!</a>
+        <a href="form.html" class="current">Personalized Solution</a>
+    </nav>
+    <main>
+        <div id="message"></div>
+        <form id="myForm">
+            <fieldset>
+                <legend>Get Your Personalized Acne Solution</legend>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-row">
+                    <label for="skin-type">Skin Type:</label>
+                    <select id="skin-type" name="skin-type" required>
+                        <option value="oily">Oily</option>
+                        <option value="dry">Dry</option>
+                        <option value="combination">Combination</option>
+                        <option value="sensitive">Sensitive</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="concerns">Main Concerns:</label>
+                    <textarea id="concerns" name="concerns" rows="4" placeholder="e.g., Acne scars, redness, etc." required></textarea>
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flawlessly You</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
