@@ -4,9 +4,14 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const skinType = document.getElementById('skin-type').value;
-    const concerns = document.getElementById('concerns').value;
+    const concerns = document.querySelector('input[name="concern"]:checked')?.value;
+    const products = Array.from(document.querySelectorAll('input[name="products[]"]:checked')).map(
+        (checkbox) => checkbox.value
+    );
 
-    if (!name || !email || !skinType || !concerns) {
+    const comments = document.getElementById('comments').value;
+
+    if (!name || !email || !skinType || !concerns || products.length === 0) {
         alert("All fields are required.");
         return;
     }
@@ -15,7 +20,9 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         name: name,
         email: email,
         skinType: skinType,
-        concerns: concerns
+        concerns: concerns,
+        products: products,
+        comments: comments,
     };
 
     const xhr = new XMLHttpRequest();
@@ -32,5 +39,5 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         }
     };
     xhr.send(JSON.stringify(formData));
-    console.log(formData);
+    console.log('Form data submitted:', formData);
 });
