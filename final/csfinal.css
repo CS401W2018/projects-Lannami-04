@@ -397,13 +397,23 @@ main section ul li .attribution a:hover {
 }
 
 .video-container {
-    text-align: center;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #FAF8F6;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    max-width: 800px; 
+    margin: 20px auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .video-link {
@@ -653,9 +663,22 @@ input[type="submit"]:hover {
     }
 
     .video-container {
-        margin: 20px auto; 
-        padding: 15px; 
-        max-width: 90%;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background-color: #000;
+        border-radius: 8px;
+        margin: 20px auto;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .video-link {
